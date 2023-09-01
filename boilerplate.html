@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirav's Tech Blog</title>
+    <!--
+    Blog Post Checklist:
+    - [ ] Replace [Title of Your Post] with the title of your post.
+    - [ ] Replace [Publication Date] with the publication date of your post.
+    - [ ] Add your blog post content in the designated area below.
+    -->
+    <title>Nirav's Tech Blog - [Title of Your Post]</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -33,28 +39,21 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Blog Post Content -->
     <div class="container mx-auto mt-8">
-        <div class="max-w-3xl mx-auto p-4">
-            <h2 class="text-3xl font-bold mb-4">Hi, I'm Nirav.</h2>
-            <p class="mb-4">I'm a sophomore Software Engineering student @ Concordia University, and here's a simple little blog where I dump my thoughts and experiences.</p>
-            <p class="mb-4">In this blog, you'll find articles ranging from personal thoughts to media reviews.</p>
-            <p class="mb-4">Feel free to explore and leave comments on the posts. I'd love to hear from you!</p>
+        <!-- "Return to Home" Button -->
+        <div class="text-center mb-4">
+            <a href="../../index.html" class="text-blue-500 hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                </svg>
+                Return to Home
+            </a>
         </div>
-    </div>
-
-    <!-- Recent Posts Section -->
-    <div class="bg-white py-8">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Recent Posts</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Sample Blog Post 1 -->
-                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">My First Post</h3>
-                    <p class="text-gray-600">The basics into who I am, and what I aspire to do.</p>
-                    <a href="posts/09-2023/01.html" class="text-blue-500 hover:underline">Read More</a>
-                </div>
-            </div>
+        <div class="max-w-3xl mx-auto p-4">
+            <h2 class="text-3xl font-bold">[Title of Your Post]</h2>
+            <p class="small mb-4">[Publication Date]</p>
+            <!-- Your blog post content goes here -->
         </div>
     </div>
 </body>
