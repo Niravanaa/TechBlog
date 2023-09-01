@@ -55,6 +55,30 @@
             <p class="small mb-4">[Publication Date]</p>
             <!-- Your blog post content goes here -->
         </div>
+
+        <div id="disqus_thread" class="max-w-3xl mx-auto p-4"></div>
+    
+        <script>
+
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://niravstechblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
     </div>
+
+    <script id="dsq-count-scr" src="//niravstechblog.disqus.com/count.js" async></script>
+
 </body>
 </html>
