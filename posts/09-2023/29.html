@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    Blog Post Checklist:
+    - [ ] Replace [Title of Your Post] with the title of your post.
+    - [ ] Replace [Publication Date] with the publication date of your post.
+    - [ ] Add your blog post content in the designated area below.
+    -->
+    <title>Nirav's Tech Blog - Programming and Getting Blocked</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4 flex justify-between items-center">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-white">Nirav's Tech Blog</h1>
+        </div>
+        <div class="text-white flex space-x-4">
+            <!-- Icon Links to LinkedIn, GitHub, and Gmail -->
+            <div>
+                <a href="https://www.linkedin.com/in/niravp0703" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Niravanaa" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:niravp0703@gmail.com">
+                    <img src="https://i.imgur.com/CDzHRTH.png" width="52"/>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container mx-auto mt-8">
+        <!-- "Return to Home" Button -->
+        <div class="text-center mb-4">
+            <a href="../../index.html" class="text-blue-500 hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                </svg>
+                Return to Home
+            </a>
+        </div>
+        <div class="max-w-3xl mx-auto p-4">
+            <h2 class="text-3xl font-bold">Programming and Getting Blocked</h2>
+            <p class="small mb-4">September 28, 2023</p>
+            
+            <h1 class="text-2xl font-bold mb-2">LeetCode Progress</h1>
+            <!-- LeetCode Problems -->
+            <ul class="list-disc pl-6 mb-6">
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/sort-array-by-parity/">Sort Array by Parity (905)</a>:</strong> A straightforward problem that involves sorting even and odd numbers in an array.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/monotonic-array/">Monotonic Array (896)</a>:</strong> Solving this problem required checking if an array is monotonic (either entirely non-increasing or non-decreasing).
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/sqrtx/">Sqrt(x) (69)</a>:</strong> Calculating the square root of an integer efficiently using binary search.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/remove-duplicate-letters/">Remove Duplicate Letters (316)</a>:</strong> A problem involving removing duplicate letters to make the lexicographically smallest result.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/find-the-difference/">Find the Difference (389)</a>:</strong> Solving this problem required finding the difference between two strings.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/happy-number/">Happy Number (202)</a>:</strong> A fun problem involving determining if a number is happy.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/group-anagrams/">Group Anagrams (49)</a>:</strong> A problem that involves grouping anagrams from a list of strings.
+                </li>
+            </ul>
+        
+            <h2 class="text-2xl font-bold mb-2">Internship Development Project</h2>
+            <p class="mb-6">My internship has taken an exciting turn as I've been assigned a development project by my technical lead. This project has the potential to be integrated into our company's services, making it a valuable experience for me. It's not only about technical programming but also about understanding the needs of our clients.</p>
+            
+            <p class="mb-6">Working on this project independently has been a great challenge and learning experience. It's amazing to see how the theoretical knowledge from school is being applied in real-world scenarios. This project is not only a chance to showcase my skills but also to contribute to the company's growth.</p>
+        
+            <h2 class="text-2xl font-bold mb-2">Challenges and Growth</h2>
+            <p class="mb-6">One of the biggest challenges I've faced this week is adapting to the demanding work schedule. The transition from school to work life can be tiring, but I've found solace in developing my hobbies after work. It's essential to maintain a work-life balance and nurture our creative and emotional sides.</p>
+            
+            <p class="mb-6">I've also dedicated time to personal development projects, separate from work and school. These small coding projects have become a source of joy and growth for me. It's fascinating to see how my passion for programming continues to evolve.</p>
+        
+            <h2 class="text-2xl font-bold mb-2">Personal Project: Discord Bot</h2>
+            <p class="mb-6">My personal project this week involves creating a Discord bot in Python. This bot sends API requests to a free and public weather database using longitude and latitude coordinates. My goal is to expand upon this project and develop a fully RESTful API-based Discord bot in the future. It's a thrilling journey into the world of bot development.</p>
+            
+        </div>
+        
+
+        <div id="disqus_thread" class="max-w-3xl mx-auto p-4"></div>
+    
+        <script>
+
+            var disqus_config = function () {
+            this.page.url = "https://users.encs.concordia.ca/~pa_nir/NiravTechBlog/posts/09-2023/29.html"
+            this.page.identifier = programming-and-getting-blocked
+            };
+
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://niravstechblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//niravstechblog.disqus.com/count.js" async></script>
+
+</body>
+</html>
