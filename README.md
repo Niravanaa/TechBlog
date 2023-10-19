@@ -26,7 +26,3 @@ Our blog covers a diverse range of topics, including but not limited to:
 ## Getting Started
 
 The blog is hosted publicly on this [link](https://users.encs.concordia.ca/~pa_nir/NiravTechBlog/index.html).
-
-## License
-
-The content in this repository is licensed under the MIT License. You are free to use, share, and modify the content for your personal and educational purposes. However, please respect the intellectual property rights of the original authors and provide proper attribution when sharing or adapting the content.
