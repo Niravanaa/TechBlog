@@ -6,6 +6,31 @@
     <title>Nirav's Tech Blog</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .post-slider {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            z-index: 1000;
+            transition: height 1s ease-in-out; /* Adjust the duration as needed */
+        }
+
+        .post-slider.active {
+            height: 100vh;
+        }
+
+        .post-slider iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    
+
 </head>
 <body class="bg-blue-100 text-gray-800">
     <!-- Navbar -->
@@ -43,148 +68,194 @@
         </div>
     </div>
 
+    <!-- Post Slider Section -->
+    <div class="post-slider" id="postSlider">
+        <iframe id="postIframe" src="" frameborder="0"></iframe>
+    </div>
+
     <!-- Recent Posts Section -->
-<div class="bg-white py-4 px-2 md:py-8 md:px-4 lg:px-6">
-    <div class="container mx-auto">
+    <div class="bg-white py-4 px-2 md:py-8 md:px-4 lg:px-6">
+        <div class="container mx-auto">
 
-        <h2 class="text-2xl font-bold mb-4 ml-2">Recent Posts</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <h2 class="text-2xl font-bold mb-4 ml-2">Recent Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">A Whole Lot of Everything</h3>
-                <h6 class="text-sm mb-2">January 3, 2024</h6>
-                <p class="text-gray-600">Some progress being made...</p>
-                <a href="posts/01-2024/03.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Gearing Up For School</h3>
+                    <h6 class="text-sm mb-2">January 10, 2024</h6>
+                    <p class="text-gray-600">The academic life awaits...</p>
+                    <a onclick="handlePostClick('posts/01-2024/10.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Winter Break Musings</h3>
-                <h6 class="text-sm mb-2">December 27, 2023</h6>
-                <p class="text-gray-600">Time to have fun...</p>
-                <a href="posts/12-2023/27.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">A Whole Lot of Everything</h3>
+                    <h6 class="text-sm mb-2">January 3, 2024</h6>
+                    <p class="text-gray-600">Some progress being made...</p>
+                    <a onclick="handlePostClick('posts/01-2024/03.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Winter Break Has Come</h3>
-                <h6 class="text-sm mb-2">December 20, 2023</h6>
-                <p class="text-gray-600">Taking a well-deserved break...</p>
-                <a href="posts/12-2023/20.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Winter Break Musings</h3>
+                    <h6 class="text-sm mb-2">December 27, 2023</h6>
+                    <p class="text-gray-600">Time to have fun...</p>
+                    <a onclick="handlePostClick('posts/12-2023/27.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Internship Wrap-Up and Future Plans</h3>
-                <h6 class="text-sm mb-2">December 13, 2023</h6>
-                <p class="text-gray-600">Advancing Projects, Nearing Goals...</p>
-                <a href="posts/12-2023/13.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Winter Break Has Come</h3>
+                    <h6 class="text-sm mb-2">December 20, 2023</h6>
+                    <p class="text-gray-600">Taking a well-deserved break...</p>
+                    <a onclick="handlePostClick('posts/12-2023/20.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Good Things Come to an End</h3>
-                <h6 class="text-sm mb-2">December 6, 2023</h6>
-                <p class="text-gray-600">Starting the month off with new goals...</p>
-                <a href="posts/12-2023/06.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Internship Wrap-Up and Future Plans</h3>
+                    <h6 class="text-sm mb-2">December 13, 2023</h6>
+                    <p class="text-gray-600">Advancing Projects, Nearing Goals...</p>
+                    <a onclick="handlePostClick('posts/12-2023/13.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">The Finish Line</h3>
-                <h6 class="text-sm mb-2">November 29, 2023</h6>
-                <p class="text-gray-600">Finishing this month's learning...</p>
-                <a href="posts/11-2023/29.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Good Things Come to an End</h3>
+                    <h6 class="text-sm mb-2">December 6, 2023</h6>
+                    <p class="text-gray-600">Starting the month off with new goals...</p>
+                    <a onclick="handlePostClick('posts/12-2023/06.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">End of the Month Prep</h3>
-                <h6 class="text-sm mb-2">November 22, 2023</h6>
-                <p class="text-gray-600">It's the end of the month...</p>
-                <a href="posts/11-2023/22.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">The Finish Line</h3>
+                    <h6 class="text-sm mb-2">November 29, 2023</h6>
+                    <p class="text-gray-600">Finishing this month's learning...</p>
+                    <a onclick="handlePostClick('posts/11-2023/29.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">The Beginning of the End</h3>
-                <h6 class="text-sm mb-2">November 15, 2023</h6>
-                <p class="text-gray-600">The end of the semestern nears...</p>
-                <a href="posts/11-2023/15.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">End of the Month Prep</h3>
+                    <h6 class="text-sm mb-2">November 22, 2023</h6>
+                    <p class="text-gray-600">It's the end of the month...</p>
+                    <a onclick="handlePostClick('posts/11-2023/22.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Winter Cold Slowness</h3>
-                <h6 class="text-sm mb-2">November 8, 2023</h6>
-                <p class="text-gray-600">Little tired, but not giving up...</p>
-                <a href="posts/11-2023/08.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">The Beginning of the End</h3>
+                    <h6 class="text-sm mb-2">November 15, 2023</h6>
+                    <p class="text-gray-600">The end of the semestern nears...</p>
+                    <a onclick="handlePostClick('posts/11-2023/15.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Déjà Vu</h3>
-                <h6 class="text-sm mb-2">November 1, 2023</h6>
-                <p class="text-gray-600">Moving on to new material...</p>
-                <a href="posts/11-2023/01.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Cold Winter Slowness</h3>
+                    <h6 class="text-sm mb-2">November 8, 2023</h6>
+                    <p class="text-gray-600">Little tired, but not giving up...</p>
+                    <a onclick="handlePostClick('posts/11-2023/08.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Steady Week</h3>
-                <h6 class="text-sm mb-2">October 25, 2023</h6>
-                <p class="text-gray-600">It's been an overall steady week...</p>
-                <a href="posts/10-2023/25.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Déjà Vu</h3>
+                    <h6 class="text-sm mb-2">November 1, 2023</h6>
+                    <p class="text-gray-600">Moving on to new material...</p>
+                    <a onclick="handlePostClick('posts/11-2023/01.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">More Learning, Less Development</h3>
-                <h6 class="text-sm mb-2">October 18, 2023</h6>
-                <p class="text-gray-600">Spent more time learning than developing...</p>
-                <a href="posts/10-2023/18.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Steady Week</h3>
+                    <h6 class="text-sm mb-2">October 25, 2023</h6>
+                    <p class="text-gray-600">It's been an overall steady week...</p>
+                    <a onclick="handlePostClick('posts/10-2023/25.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Productivity Boost</h3>
-                <h6 class="text-sm mb-2">October 11, 2023</h6>
-                <p class="text-gray-600">It's been a little more of a productive week...</p>
-                <a href="posts/10-2023/11.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
-            
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Learning, Learning, Learning</h3>
-                <h6 class="text-sm mb-2">October 4, 2023</h6>
-                <p class="text-gray-600">Learning from books, learning from work, and from myself...</p>
-                <a href="posts/10-2023/04.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">More Learning, Less Development</h3>
+                    <h6 class="text-sm mb-2">October 18, 2023</h6>
+                    <p class="text-gray-600">Spent more time learning than developing...</p>
+                    <a onclick="handlePostClick('posts/10-2023/18.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Programming and Getting Blocked</h3>
-                <h6 class="text-sm mb-2">September 29, 2023</h6>
-                <p class="text-gray-600">A little more important development, but getting blocked...</p>
-                <a href="posts/09-2023/29.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Productivity Boost</h3>
+                    <h6 class="text-sm mb-2">October 11, 2023</h6>
+                    <p class="text-gray-600">It's been a little more of a productive week...</p>
+                    <a onclick="handlePostClick('posts/10-2023/11.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
+                
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Learning, Learning, Learning</h3>
+                    <h6 class="text-sm mb-2">October 4, 2023</h6>
+                    <p class="text-gray-600">Learning from books, learning from work, and from myself...</p>
+                    <a onclick="handlePostClick('posts/10-2023/04.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">It's getting busier...</h3>
-                <h6 class="text-sm mb-2">September 21, 2023</h6>
-                <p class="text-gray-600">A review of my week went as I settle into the season...</p>
-                <a href="posts/09-2023/21.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">Programmer's Block</h3>
+                    <h6 class="text-sm mb-2">September 29, 2023</h6>
+                    <p class="text-gray-600">A little more important development, but getting blocked...</p>
+                    <a onclick="handlePostClick('posts/09-2023/29.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">My First Programming Book</h3>
-                <h6 class="text-sm mb-2">September 14, 2023</h6>
-                <p class="text-gray-600">A review after having read my first programming book...</p>
-                <a href="posts/09-2023/14.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">It's getting busier...</h3>
+                    <h6 class="text-sm mb-2">September 21, 2023</h6>
+                    <p class="text-gray-600">A review of my week went as I settle into the season...</p>
+                    <a onclick="handlePostClick('posts/09-2023/21.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">My First Day as an Intern</h3>
-                <h6 class="text-sm mb-2">September 7, 2023</h6>
-                <p class="text-gray-600">How my first day at Genetec Inc. went...</p>
-                <a href="posts/09-2023/07.html" class="text-blue-500 hover:underline">Read More</a>
-            </div>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">My First Programming Book</h3>
+                    <h6 class="text-sm mb-2">September 14, 2023</h6>
+                    <p class="text-gray-600">A review after having read my first programming book...</p>
+                    <a onclick="handlePostClick('posts/09-2023/14.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
 
-            <div class="bg-gray-100 p-4 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">My First Post</h3>
-                <h6 class="text-sm mb-2">September 1, 2023</h6>
-                <p class="text-gray-600">The basics into who I am, and what I aspire to do...</p>
-                <a href="posts/09-2023/01.html" class="text-blue-500 hover:underline">Read More</a>
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">My First Day as an Intern</h3>
+                    <h6 class="text-sm mb-2">September 7, 2023</h6>
+                    <p class="text-gray-600">How my first day at Genetec Inc. went...</p>
+                    <a onclick="handlePostClick('posts/09-2023/07.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
+
+                <div class="bg-gray-100 p-4 shadow-md rounded-lg">
+                    <h3 class="text-xl font-semibold">My First Post</h3>
+                    <h6 class="text-sm mb-2">September 1, 2023</h6>
+                    <p class="text-gray-600">The basics into who I am, and what I aspire to do...</p>
+                    <a onclick="handlePostClick('posts/09-2023/01.html')" class="text-blue-500 hover:underline">Read More</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
 </body>
+
+<script>
+    function handlePostClick(postUrl) {
+        const postSlider = document.getElementById('postSlider');
+        const postIframe = document.getElementById('postIframe');
+
+        if (postSlider.classList.contains('active')) {
+            postIframe.src = postUrl;
+        } else {
+            postIframe.src = postUrl;
+            postSlider.classList.add('active');
+            console.log(postIframe.src);
+        }
+    }
+
+    function closePostSlider() {
+        const postSlider = document.getElementById('postSlider');
+        const postIframe = document.getElementById('postIframe');
+
+        postSlider.style.height = '0';  // Set height to 0 to trigger the slide-up animation
+
+        // After the transition duration (1s in this case), remove the 'active' class
+        setTimeout(() => {
+            postSlider.classList.remove('active');
+            postSlider.style.height = '';  // Reset height to auto
+        }, 1000);  // Adjust the time based on your transition duration
+    }
+
+    window.addEventListener('message', function (event) {
+        if (event.data.action === 'closeSlider') {
+            closePostSlider();
+        }
+    });
+</script>
+
 </html>
