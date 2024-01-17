@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirav's Tech Blog - Like I Never Left</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4 flex justify-between items-center">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-white">Nirav's Tech Blog</h1>
+        </div>
+        <div class="text-white flex space-x-4">
+            <!-- Icon Links to LinkedIn, GitHub, and Gmail -->
+            <div>
+                <a href="https://www.linkedin.com/in/niravp0703" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Niravanaa" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:niravp0703@gmail.com">
+                    <img src="https://i.ibb.co/hWYpyYd/gmail-icon-icons-com-59877-removebg-preview.png" width="52"/>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container mx-auto mt-8">
+        <!-- "Return to Home" Button -->
+        <div class="text-center mb-4">
+            <a onclick="returnToHome()" class="text-blue-500 hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                </svg>
+                Return to Home
+            </a>
+        </div>
+        <div class="max-w-3xl mx-auto p-4">
+            <h2 class="text-3xl font-bold">Like I Never Left</h2>
+            <p class="small mb-4">January 17, 2024</p>
+            
+            <h2 class="text-2xl font-bold mb-2">Solving LeetCode Challenges</h2>
+        
+            <!-- LeetCode Problems -->
+            <ul class="list-disc pl-6 mb-6">
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/intersection-of-two-linked-lists/">160. Intersection of Two Linked Lists</a>:</strong> I worked on finding the intersection of two linked lists.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/add-strings/">415. Add Strings</a>:</strong> I tackled the challenge of adding strings.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/find-the-difference/">389. Find the Difference</a>:</strong> I explored the problem of finding the difference.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/running-sum-of-1d-array/">1480. Running Sum of 1d Array</a>:</strong> I delved into calculating the running sum of a 1D array.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/find-first-palindromic-string-in-the-array/">2108. Find First Palindromic String in the Array</a>:</strong> I worked on finding the first palindromic string in an array.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/maximum-strong-pair-xor-i/">2932. Maximum Strong Pair XOR I</a>:</strong> I explored the challenges related to the maximum strong pair XOR I.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/remove-outermost-parentheses/">1021. Remove Outermost Parentheses</a>:</strong> I tackled the challenge of removing outermost parentheses.
+                </li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-2">Course and Book Progress</h2>
+
+            <!-- Thursday, January 11, 2023 -->
+            <h3 class="text-xl font-bold">Thursday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned the significance of promptly addressing warning messages to maintain a clean codebase. Explicitly setting default props eliminated warnings related to unset props, and the effective use of custom events and slots showcased the importance of careful event management and efficient data flow between components. Additionally, the implementation of a reusable modal component demonstrated how modals enhance user interactions and contribute to a clean user interface in Svelte applications.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, I gained insights into the power of functional programming tools, particularly map(), filter(), and reduce(). Recognizing common patterns allowed for efficient refactoring using these tools, streamlining code and improving readability. Understanding the three ways to pass a function in JavaScript provided valuable insights into the language's support for first-class functions. The course highlighted the versatility of reduce() in various scenarios, from undo/redo operations to creating audit trails, showcasing its broader applicability beyond array manipulation. The integration of these fundamental tools into real-world examples enriched my understanding of functional programming principles.</p>
+
+            <!-- Friday, January 12, 2023 -->
+            <h3 class="text-xl font-bold">Friday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I gained insights into effectively using slots in Svelte, addressing challenges, and incorporating buttons with customized behaviors. The course also concluded a project, transitioning to advanced topics like bindings and form mechanics. The upcoming sections promised a deeper understanding of binding data to HTML elements, custom components, and exploring form validation. The module on custom component bindings highlighted considerations for dynamic attributes and the judicious use of two-way binding for maintaining code simplicity and clarity. Additionally, the importance of data type considerations, especially with numerical inputs, was emphasized, with Svelte providing automatic number conversion for seamless handling.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, two effective methods for clarifying chains of functional tools were explored. Method 1 involved naming the steps, breaking down complex code into smaller, more modular functions, while Method 2 focused on naming the callbacks, improving reusability and reducing nesting. Upon comparison, it became evident that Method 2 tends to produce clearer and more reusable code. The named callbacks offer improved modularity, making them versatile for various scenarios with fewer dependencies in the call graph. Additionally, the course provided practical tips for refactoring for loops into chains of functional tools, optimizing code for better efficiency.</p>
+
+            <!-- Saturday, January 13, 2023 -->
+            <h3 class="text-xl font-bold">Saturday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned about the powerful use of the reduce() function in JavaScript to dynamically build a shopping cart from a list of items, augmenting data with functional programming concepts. The application of functional tool chaining for clean and efficient code formatting, illustrated through examples like moving average calculations, enhanced my appreciation for well-designed functional programming practices. Additionally, the insights into handling nested data structures with higher-order functions and the iterative nature of code improvement through refactoring techniques highlighted the commitment to clean, readable, and efficient code within the marketing team.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, I learned practical strategies for modifying values within objects using the update() function, streamlining operations on nested structures, and addressing code smells. The team's systematic approach to applying refactorings, such as making implicit arguments explicit and creating generic tools like update2(), demonstrated the power of higher-order functions and the importance of code clarity and maintainability. The detailed breakdown of functions and visual representations provided a comprehensive understanding of nested updates, emphasizing the significance of meticulous code analysis in dealing with complex data structures. Overall, these experiences enriched my knowledge of functional programming principles and refactoring techniques for creating modular and reusable code structures.</p>
+
+            <!-- Sunday, January 14, 2023 -->
+            <h3 class="text-xl font-bold">Saturday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned about implementing form validation for a meetup application. The process involves introducing validation logic to individual text inputs, managing the validity state based on user interactions, and dynamically validating the overall form. The importance of consolidating individual input validities to determine the overall form validity efficiently was emphasized, leading to the optimization of the code by eliminating duplicate variables. The module also introduced the use of the bind directive for two-way binding in certain cases, showcasing Svelte's efficiency and flexibility in development.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, I learned about efficiently updating nested values within multilevel objects using concise and adaptable functions. The update2() function, demonstrated with a practical example, involves incrementing the 'size' option of an item nested twice within objects, showcasing the process of navigating through nested objects using 'gets' and 'sets.' The course also covered the challenges of modifying item options within a three-level nested cart structure, presenting four different approaches for writing the incrementSizeByName() function and subsequently deriving update3() for more concise updates. Additionally, the developers abstracted the pattern into a versatile nestedUpdate() function, emphasizing the recursive nature of functional programming.</p>
+
+            <!-- Monday, January 15, 2023 -->
+            <h3 class="text-xl font-bold">Monday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned about managing global state efficiently using Svelte stores. By creating a writable store, components gain access to a centralized and reactive way of managing data. The process involves importing the store, subscribing to changes, and updating the store data. This approach simplifies global data management, eliminating the need for complex event propagation or prop passing. The importance of handling store subscriptions properly, especially during component destruction, was highlighted to prevent memory leaks and maintain a clean application state.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, the two key rules involve placing sequentially occurring actions in the same timeline and creating separate timelines for actions that can happen simultaneously or out of order. Additionally, the importance of accurately representing the order of execution, especially in asynchronous scenarios, was emphasized. In the context of creating timeline diagrams for an add-to-cart code, the process involves identifying actions, drawing them sequentially or in parallel, and simplifying using platform-specific knowledge.</p>
+
+            <!-- Tuesday, January 16, 2023 -->
+            <h3 class="text-xl font-bold">Tuesday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I discovered the convenience of autosubscriptions using the dollar sign notation, providing a shortcut for handling common use cases where data from a store is directly used in markup. The role of custom stores in managing application state was highlighted, showcasing how they offer a cleaner and organized structure for handling state across components. The distinction between writable and readable stores, along with optimizing subscriptions for specific needs, was crucial in understanding efficient state management in Svelte applications.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, I learned about the complexities of implementing a "Buy Now" button on a webpage, focusing on the example of MegaMart's site. The process involves querying the button, setting up a callback for click events, and initiating an AJAX request. The timeline diagramming process and its simplification steps were crucial in enhancing the clarity and comprehension of the platform's operation, addressing potential bugs in the code. Additionally, resource-sharing challenges were identified and resolved by converting global variables to local ones, emphasizing the importance of resource isolation in maintaining code reliability.</p>
+
+            <!-- Wednesday, January 17, 2023 -->
+            <h3 class="text-xl font-bold">Wednesday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned the importance of using stores to manage state efficiently. The addition of a writable store, "meetups.store.js," in a course project simplified data management and set the foundation for incorporating new features. Custom stores in Svelte applications, exemplified by "meetups.store.js," organize logic, reduce complexity, and improve code structure. The flexibility of accessing custom stores from different components streamlines code, making it more modular and maintainable. Integrating a new "MeetupDetail" component showcased the power of Svelte in managing state and interactions within a web application.</p>
+        
+            <p class="mb-4">In "Grokking Simplicity" by Eric Normand, I learned that asynchronous JavaScript calls require a final callback instead of a return value for explicit output. This callback-based approach enhances modularity and supports functional programming practices. Principles of system design, such as coordinating shared resources across timelines, are crucial for ensuring correctness, and analyzing timeline diagrams helps identify bugs related to resource sharing. The implementation of a queue in JavaScript is essential for coordinating asynchronous tasks and maintaining order in functional programming.</p>
+
+            <!-- Miscellaneous Things -->
+            <h2 class="text-2xl font-bold mb-2">Miscellaneous Things</h2>
+            
+            <p class="mb-4">Throughout the week, I dedicated focused efforts to grasp the overall concept of my game project. This involved mapping out locations, designing environmental assets, and sketching characters. Currently, I've implemented a basic, albeit somewhat clunky, movement system. Refining this movement is my next priority, followed by character modeling, location design, and utilizing the prepared props. I'm optimistic about the eventual outcome of the project.</p>
+            
+            <p class="mb-4">As the winter semester kicks off at Concordia, I've enrolled in a full courseload of five courses. My schedule includes Operating Systems, Principles of Electrical Engineering, Probability and Statistics in Engineering, Introduction to Formal Methods for Software Engineering, and Software Process. I'm looking forward to the academic challenges and reconnecting with the learning environment.</p>
+            
+            <p class="mb-4">Excitingly, I secured another interview opportunity and recently had a brief fifteen-minute call with the HR representative of the company on Monday. The position is related to full-stack development, aligning well with my desire to gain professional experience in this field. I'm hopeful about progressing to the next rounds of the interview process.</p>
+        
+        </div>
+
+        <div id="disqus_thread" class="max-w-3xl mx-auto p-4"></div>
+    
+        <script>
+
+            var disqus_config = function () {
+            this.page.url = "https://users.encs.concordia.ca/~pa_nir/NiravTechBlog/posts/01-2024/17.html";
+            this.page.identifier = "Like I Never Left";
+            };
+
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://niravstechblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            
+            function returnToHome() {
+                window.parent.postMessage({ action: 'closeSlider' }, '*');
+            }
+
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//niravstechblog.disqus.com/count.js" async></script>
+
+</body>
+</html>
