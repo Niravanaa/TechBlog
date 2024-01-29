@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirav's Tech Blog - Inundated</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4 flex justify-between items-center">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-white">Nirav's Tech Blog</h1>
+        </div>
+        <div class="text-white flex space-x-4">
+            <!-- Icon Links to LinkedIn, GitHub, and Gmail -->
+            <div>
+                <a href="https://www.linkedin.com/in/niravp0703" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Niravanaa" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50"/>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:niravp0703@gmail.com">
+                    <img src="https://i.ibb.co/hWYpyYd/gmail-icon-icons-com-59877-removebg-preview.png" width="52"/>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container mx-auto mt-8">
+        <!-- "Return to Home" Button -->
+        <div class="text-center mb-4">
+            <a onclick="returnToHome()" class="text-blue-500 hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                </svg>
+                Return to Home
+            </a>
+        </div>
+        <div class="max-w-3xl mx-auto p-4">
+            <h2 class="text-3xl font-bold">Inundated</h2>
+            <p class="small mb-4">January 28, 2024</p>
+            
+            <h2 class="text-2xl font-bold mb-2">Solving LeetCode Challenges</h2>
+        
+            <!-- LeetCode Problems -->
+            <ul class="list-disc pl-6 mb-6">
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/map-sum-pairs/">677. Map Sum Pairs</a>:</strong> I worked on the challenge of Map Sum Pairs.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/minimum-number-game/">2974. Minimum Number Game</a>:</strong> I tackled the challenge of the Minimum Number Game.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/binary-watch/">401. Binary Watch</a>:</strong> I explored the problem of Binary Watch.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/find-center-of-star-graph/">1791. Find Center of Star Graph</a>:</strong> I delved into finding the center of a star graph.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/divisor-game/">1025. Divisor Game</a>:</strong> I worked on challenges related to the Divisor Game.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/pascals-triangle/">118. Pascal's Triangle</a>:</strong> I explored the challenges related to Pascal's Triangle.
+                </li>
+                <li>
+                    <strong><a class="text-blue-500" target="_blank" href="https://leetcode.com/problems/longest-palindrome/">409. Longest Palindrome</a>:</strong> I tackled the challenge of finding the Longest Palindrome.
+                </li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-2">Course and Book Progress</h2>
+
+            <!-- Monday, January 22, 2023 -->
+            <h3 class="text-xl font-bold">Thursday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned valuable insights into fetching data using the fetch API in JavaScript, optimizing the request placement within script tags and employing GET requests for efficient data retrieval. Transforming data into arrays using techniques like for-in loops and Object.values(data) enhanced my skills for real-world applications. The significance of placing the fetch call within the onMount lifecycle method, early variable definitions, and incorporating loading indicators were crucial considerations for seamless asynchronous data loading. Additionally, exploring the 'await' block in Svelte provided a concise approach for handling loading indicators, with an awareness of its limitations for dynamic data. Creating a custom store named 'hobby store' using writable store and methods like setHobbies and addHobby streamlined data management, providing an organized structure for handling application state without complex data passing. The module on HTTP in Svelte offered a foundational understanding of server interaction, emphasizing the importance of working with promises for data updates. Transitioning to practical application in the course project, the focus shifted to handling data deletion, updates, and creating a user-friendly experience with loading spinners, reinforcing theoretical concepts in a real-world context.</p>
+        
+            <!-- Tuesday, January 23, 2023 -->
+            <h3 class="text-xl font-bold">Friday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned to incorporate Firebase for data management in my Svelte.js course project, focusing on storing, fetching, and transforming meetup data. Utilizing fetch requests, dynamic REST API usage, and Svelte's capabilities, I successfully implemented features such as adding meetups to the server, displaying a loading spinner, updating meetups via PATCH requests, and handling favoriting and deletion. The course provided insights into practical considerations like error handling, order optimization, and enhancing user experience through loading spinners and error modals, contributing to a comprehensive understanding of building interactive and dynamic applications with Svelte.js.</p>
+                
+            <!-- Wednesday, January 24, 2023 -->
+            <h3 class="text-xl font-bold">Saturday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned to integrate advanced concepts in Svelte, such as dynamic components, recursive components, and specialized elements like svelte:window, svelte:body, and svelte:head. These features enhance flexibility and efficiency in handling dynamic scenarios, from rendering different components based on conditions to dynamically modifying the window, body, and head of the document. Additionally, I gained insights into cross-component scripts for nuanced control over script execution, especially when sharing data across instances. Furthermore, the module introduced Sapper as a complementary package, addressing routing and server-side rendering (SSR) to enhance the meetup project's performance and optimization.</p>
+                
+            <!-- Thursday, January 25, 2023 -->
+            <h3 class="text-xl font-bold">Saturday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned about the benefits of Sapper as a companion package to Svelte, introducing routing and server-side rendering (SSR) to enhance functionality and performance. Exploring the provided project, I gained insights into the enforced folder structure, dynamic routing, and the significance of layout and error pages. Understanding preloading and data fetching in Sapper, both on the server and client sides, became crucial for optimizing performance and efficiently managing data in Sapper applications. These skills will be instrumental as I delve into the practical implementation of Sapper in the course project, contributing to a more robust and optimized Svelte application.</p>
+                
+            <!-- Friday, January 26, 2023 -->
+            <h3 class="text-xl font-bold">Monday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned how to migrate a client-side project to a Sapper project, adapting the structure, merging components, and optimizing layout for server-side rendering and improved user experience. The process involves transitioning the meetup project, adjusting the main component, handling data fetching, preloading, and synchronizing data with the store. Successful implementation of CRUD operations, editing, and deleting meetups, as well as rendering individual meetup details, demonstrates proficiency in leveraging Sapper's capabilities for enhanced functionality and performance.</p>
+                
+            <!-- Saturday, January 27, 2023 -->
+            <h3 class="text-xl font-bold">Tuesday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned that Sapper, a valuable framework complementing Svelte, offers the ability to build robust applications with server-side rendering and seamless single-page application experiences. The course covered deployment strategies for Svelte and Sapper apps, including server-side rendering, static hosting, and integration into existing web pages. Practical insights into addressing server-side rendering issues, deploying on AWS Elastic Beanstalk, and hosting static sites on AWS S3 provided a comprehensive understanding of deploying Svelte applications effectively.</p>
+                
+            <!-- Sunday, January 28, 2023 -->
+            <h3 class="text-xl font-bold">Wednesday</h3>
+            <p class="mb-4">In "Svelte.js - The Complete Guide" by Maximilian Schwartzmuller, I learned that deploying SAP applications involves strategic decision-making based on project requirements, offering diverse options such as server-side rendering, pre-rendering, and single-page applications. The course provided a nuanced understanding of these deployment choices, empowering me to tailor solutions to specific project demands effectively. Additionally, in comparing Svelte to React, Angular, and Vue, I gained insights into Svelte's unique strengths as a compiler, delivering small and optimized bundles, making it a compelling choice for certain projects. Lastly, the course emphasized that completing the learning journey is just the beginning, highlighting the importance of continuous learning, practical application, and hands-on experience for true expertise and proficiency in the field.</p>
+                
+            <!-- Miscellaneous Things -->
+            <h2 class="text-2xl font-bold mb-2">Miscellaneous Things</h2>
+
+            <p class="mb-4">I've gotten back into the school rhythm, with the second week already completed. Adjusting to my school schedule, I'm working on establishing a workflow that allows me to excel both academically and in side-project development, such as game development.</p>
+
+            <p class="mb-4">It's fascinating to witness the viral success of games like Palworld (<a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank">Palworld</a>), with a 50-man indie company generating around 160 million dollars in revenue. This inspires me to pursue game development, aiming for a creative and profitable venture. My ikigai, aligning programming and a passion for gaming, motivates me to explore these fields creatively and potentially as a side-hobby.</p>
+
+            <p class="mb-4">I've completed the Grokking Simplicity book, which provided valuable insights into functional programming. Additionally, finishing my Svelte.js course equipped me with the fundamentals and intricacies of the Svelte compiler framework, embraced by a rapidly growing community of web developers.</p>
+
+        </div>
+
+        <div id="disqus_thread" class="max-w-3xl mx-auto p-4"></div>
+    
+        <script>
+
+            var disqus_config = function () {
+            this.page.url = "https://users.encs.concordia.ca/~pa_nir/NiravTechBlog/posts/01-2024/28.html";
+            this.page.identifier = "Inundated";
+            };
+
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://niravstechblog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            
+            function returnToHome() {
+                window.parent.postMessage({ action: 'closeSlider' }, '*');
+            }
+
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+    <script id="dsq-count-scr" src="//niravstechblog.disqus.com/count.js" async></script>
+
+</body>
+</html>
